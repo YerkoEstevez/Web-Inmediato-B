@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensamble Inmediato - Integrantes</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style> 
+        .svg-icon img {width: 40px; height: 40px;}
+        .member-biography {
+            display: none; /* Ocultar todas las biografías por defecto */
+        }
+        .member-biography.active {
+            display: block; /* Mostrar solo la biografía activa */
+        }
+    </style>
+</head>
+<body>
+    <header class="transparent header">
+        <a href="index.html" class="mobile-logo">Ensamble Inmediato</a>
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="about.html">Historia</a>
+            <a href="members.html">Integrantes</a>
+            <a href="../index.html#content">Conciertos</a>
+            <a href="gallery.html">Galería</a>
+            <a href="../index.html#mycontact">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="members-section">
+        <div class="container">
+            <h1 class="section-title">Integrantes</h1>
+            <div class="members-nav">
+                <button class="member-tab active" data-member="member1"><img src="../images/members/member1.jpg" alt="Mizky Bernal Miranda"></button>
+                <button id="member 2" class="member-tab" data-member="member2"><img src="../images/members/member2.jpg" alt="Yerko Esetevez"></button>
+                <button id="member 3" class="member-tab" data-member="member3"><img src="../images/members/member3.jpeg" alt="Jose Ignacion Camacho"></button>
+                <button id="member 4" class="member-tab" data-member="member5"><img src="../images/members/member5.jpeg" alt="Jorge Monroy"></button>
+            </div>
+            <div class="members-list">
+                <!-- Primer miembro activo por defecto -->
+                <div class="member-card" data-member="member1">
+                    <div class="member-details">
+                        <div class="composer">
+                            <div class="composer-name"><h2>Mizky Bernal Miranda</h2></div>
+                            <div class="composer-details"><li><strong>Nacionalidad:</strong> Boliviana</li>
+                            <li><strong>Fecha de Nacimiento:</strong> Enero 1991</li>
+                            <li><strong>Instrumento:</strong> Piano</li></div>
+                        </div>
+                    <div>
+                        <ul class="member-social">
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=100092884987093" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/ensambleinmediato/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                
+                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="member-biography active" data-member="member1">
+                    <h3>Biografía</h3>
+                    <h2>Mizky Bernal Miranda</h2>
+                    <p>Biografía detallada de Mizky Bernal Miranda. 
+                        Mizky B. Bernal Miranda nació el 31 de enero de 1991 en Cochabamba, Bolivia. Es
+                        licenciada en Música en la Universidad Loyola. Recibió su formación en dirección
+                        musical, composición y piano, de diferentes maestros de renombre nacional e
+                        internacional, en diferentes instituciones, cursos, talleres y seminarios. En el año 2019
+                        fue invitada a formar parte de la FIL La Paz, como expositora invitada sobre el tema “El
+                        problema de la composición”. En el año 2020 ganó la convocatoria Festival Mujeres en
+                        la Música Nueva como una de las 5 compositora seleccionadas. Fue invitada en calidad
+                        de compositora, en el evento de Música Contemporánea Boliviana 2020 organizado por
+                        CasaTaller, en la ciudad de La Paz y en el Festival Boliviano de Música, en la ciudad de
+                        Santa Cruz. Desde el año 2020 hasta la actualidad, se encuentra pasando clases de
+                        creación musical con el maestro compositor Julio Estrada y programación musical con el
+                        Dr. Hugo Solís. En el año 2021 participó en el Festival Boliviano de Música como
+                        compositora y como instrumentista, en la ciudad de Santa Cruz. Desde el 2021 hasta la
+                        actualidad es parte del Ensamble Inmediato, con un trabajo enfocado particularmente a la
+                        difusión de la música de vanguardia. En el año 2022 curso un diplomado de Arte Sonoro
+                        otorgado por Tsonami Arte Sonoro-Chile. Fue seleccionada como compositora con su
+                        obra “ser sonoro” por el Ensamble XX-XXI-Argentina. Participó en el concierto Ecos
+                        palpitantes con su obra “contru-ir” presentado en Bogotá. Participó en la exposición
+                        Postales sonoras con su obra “ciudad rítmica” presentada en Veracruz. Como
+                        compositora invitada, se le convoco a colaborar con el conjunto mexicano Low Frequency
+                        Trio. Participó en las Jornadas virtuales de música contemporánea 2022 con su obra
+                        “Selva eléctrica” presentada en La Paz. Sus dos obras para piano “Para Aiva” compuesta
+                        en colaboración con la Inteligencia Artificial AIVA fueron seleccionadas en
+                        conmemoración a los 55 años de la Orquesta Sinfónica de Bogotá interpretadas por el
+                        pianista Sergei Sichkov. Fue invitada en calidad de compositora para participar en la V
+                        edición de la Bienal internacional de Arte Sonoro organizado por Sonandes, en la ciudad
+                        de La Paz.
+                    </p>
+                </div>
+
+                <!-- Otro Compositor/a -->
+                <div class="member-card" data-member="member2" style="display:none;">
+                    <div class="member-details">
+                        <div class="composer">
+                            <div class="composer-name"><h2>Yerko Estevez Salazar</h2></div>
+                            <div class="composer-details"><li><strong>Nacionalidad:</strong> Boliviana</li>
+                            <li><strong>Fecha de Nacimiento:</strong> Agosto 1994</li>
+                            <li><strong>Instrumento:</strong> Guitarra</li></div>
+                        </div>
+                    <div>
+                        <ul class="member-social">
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=100092884987093" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/ensambleinmediato/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                
+                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="member-biography" data-member="member2">
+                    <h3>Biografía</h3>
+                    <h2>Yerko Estevez Salazar</h2>
+                    <p>Biografía detallada de Yerko Estevez Salazar.
+                        Yerko Estevez; Estudió música, guitarra eléctrica en el "Conservatorio Plurinacional de Música"
+                        2014-2016. Concluyó sus estudios de composición en la "Escuela de Composición" de
+                        Casataller. Cursó el "Diplomado en Composición y Arreglos Musicales" (U.P.E.A.). Participó en las
+                        "Jornadas de Música Contemporánea" del CCMC en Colombia. También del taller
+                        multidisciplinario "Acústica musical y sonoridades" con el profesor Arnauld Girard. Estrenó obras
+                        en Alemania y Colombia. Ganador del segundo "Concurso de Música Nueva" organizado por el
+                        Goethe-Zentrum Santa Cruz de la Sierra. Mención de honor en el "Concurso de composición
+                        Maria Teresa Rivera de Stahlie".
+                        Miembro fundador del "conjunto de moseñada La Nueva Sensacion".
+                        Miembro fundador del CDIC Colectivo de Improvisadores y Compositores.
+                        Miembro del ensamble Inmediato.
+                    </p>
+                </div>
+                
+                <!-- otro compositor/a -->
+                <div class="member-card" data-member="member3" style="display:none;">
+                    <div class="member-details">
+                        <div class="composer">
+                            <div class="composer-name"><h2>Jose Ignacio Camacho</h2></div>
+                            <div class="composer-details"><li><strong>Nacionalidad:</strong> Boliviana</li>
+                            <li><strong>Fecha de Nacimiento:</strong> Julio 1993</li>
+                            <li><strong>Instrumento:</strong> Guitarra</li></div>
+                        </div>
+                    <div>
+                        <ul class="member-social">
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=100092884987093" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/ensambleinmediato/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                
+                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="member-biography" data-member="member3">
+                    <h3>Biografía</h3>
+                    <h2>Jose Ignacio Rolando Camacho Cardozo</h2>
+                    <p>Biografía detallada de Jose Ignacio Camacho Cardozo.
+                        José Camacho ( Bolivia - 93) es compositor, fotógrafo y diseñador gráfico.
+                        Ha estudiado diseño gráfico en la Universidad Católica Boliviana. En sus estudios musicales
+                        cuenta con una trayectoria en Inglaterra, Chile, Colombia y Bolivia. Ha cursado el
+                        Diplomado en Arreglos y Composición (Universidad Pública de El Alto). Actualmente es
+                        postulante de maestría en composición; y forma parte de la licenciatura de composición en
+                        el Conservatorio Plurinacional de Bolivia.
+                        Sus obras han sido interpretadas en diversos lugares como es Bolivia, Colombia, Chile, etc..
+                        Es miembro del grupo Azorella, del ensamble Inmediato y del Conjunto Nueva Sensación
+                    </p>
+                </div>
+
+                <!-- otro compositor/a -->
+                <div class="member-card" data-member="member5" style="display:none;">
+                    <div class="member-details">
+                        <div class="composer">
+                            <div class="composer-name"><h2>Jorge Monroy Barriga</h2></div>
+                            <div class="composer-details"><li><strong>Nacionalidad:</strong> Boliviana</li>
+                            <li><strong>Fecha de Nacimiento:</strong> noviembre 1994</li>
+                            <li><strong>Instrumento:</strong> Guitarra</li></div>
+                        </div>
+                    <div>
+                        <ul class="member-social">
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=100092884987093" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/ensambleinmediato/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                    </svg>
+                                </a>
+                                
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                
+                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <svg class="social-icon" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="member-biography" data-member="member5">
+                    <h3>Biografía</h3>
+                    <h2>Jorge Mauricio Monroy Barriga</h2>
+                    <p>Biografía detallada de Jorge Monroy Barriga.
+                        Jorge Monroy Barriga nació en La Paz, Bolivia en 1994.
+                        Jorge Monroy ( Bolivia - 1994 ) hizo algunos estudios formales en el Conservatorio
+                        Plurinacional de Bolivia y en Casataller. Alternativamente hizo cursos más independientes con
+                        diversos maestros de composición.
+                        Forma parte del conjunto autóctono Nueva Sensación, del ensamble de música
+                        latinoamericana Ceviche Mixto, y del ensamble de música contemporánea Ensamble
+                        Inmediato.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const memberTabs = document.querySelectorAll('.member-tab');
+            const memberCards = document.querySelectorAll('.member-card');
+            const memberBiographies = document.querySelectorAll('.member-biography');
+
+            memberTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Quitar clase active de todos los tabs
+                    memberTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    // Obtener el miembro seleccionado
+                    const selectedMember = tab.getAttribute('data-member');
+
+                    // Ocultar todas las tarjetas y biografías
+                    memberCards.forEach(card => {
+                        card.style.display = 'none';
+                    });
+                    memberBiographies.forEach(bio => {
+                        bio.classList.remove('active');
+                    });
+
+                    // Mostrar la tarjeta y biografía del miembro seleccionado
+                    const selectedCard = document.querySelector(`.member-card[data-member="${selectedMember}"]`);
+                    const selectedBio = document.querySelector(`.member-biography[data-member="${selectedMember}"]`);
+
+                    if (selectedCard) selectedCard.style.display = 'block';
+                    if (selectedBio) selectedBio.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2026 Ensamble Inmediato. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</html>

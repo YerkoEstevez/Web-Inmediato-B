@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Ensamble Inmediato</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+
+<body>
+    <header class="transparent header">
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="./about.html">Historia</a>
+            <a href="./members.html">Integrantes</a>
+            <a href="../index.html#content">Conciertos </a>
+            <a href="pages/gallery.html">Galería</a>
+            <a href="../index.html#mycontact">Contacto</a>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <main class="gallery-container">
+      
+        <div class="image-card">
+            <img src="https://i.imgur.com/K6c4uji.jpeg" alt="Imagen 1">
+            <a href="#" class="download-btn">
+              <img src="../images/performances/descarga.png" alt="download">
+            </a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/h5zDzx7.jpeg" alt="Imagen 2">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/IS7m8qZ.jpeg" alt="Imagen 3">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/BfN8LOL.jpeg" alt="Imagen 4">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/Jgi9DTz.jpeg" alt="Imagen 5">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/UiVl2mn.jpeg" alt="Imagen 6">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/zlebU3C.jpeg" alt="Imagen 6">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/3SDzIfz.jpeg" alt="Imagen 6">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/2n5h5wM.jpeg" alt="Imagen 6">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+        <div class="image-card">
+            <img src="https://i.imgur.com/O6VrIDw.jpeg" alt="Imagen 6">
+            <a href="#" class="download-btn"><img src="../images/performances/descarga.png" alt="download"></a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Ensamble Inmediato. Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
